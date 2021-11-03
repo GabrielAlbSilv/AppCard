@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    app:cardCornerRadius="2dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"> <!-- Abrindo LinearLayout dentro do CardView!-->
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/cafe_dois"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/glonojad"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RatingBar
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:stepSize="0.5"
+                    /> <!-- Barra de avaliação !-->
+
+                <TextView
+                    android:textSize="9sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.5" />
+
+                <TextView
+                    android:textSize="9sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(413)" />
+
+            </LinearLayout>
+
+            <TextView
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#3A3A3A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vegetarian_coffee"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/descveg" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CACACA"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:textSize="8sp"
+                android:textColor="#3A3A3A"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Horários disponíveis" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="42dp"
+                    android:layout_height="35dp"
+                    android:textSize="5sp"
+                    android:text="4:00 pm"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <Button
+                    android:layout_width="42dp"
+                    android:layout_height="35dp"
+                    android:textSize="5sp"
+                    android:text="6:00 pm"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:layout_width="42dp"
+                    android:layout_height="35dp"
+                    android:textSize="5sp"
+                    android:text="8:00 pm"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:layout_width="42dp"
+                    android:layout_height="35dp"
+                    android:textSize="5sp"
+                    android:text="Reserve"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

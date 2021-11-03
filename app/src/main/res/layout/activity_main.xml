@@ -4,10 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context=".MainActivity"
     android:background="#818181"
     >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
 
     <androidx.cardview.widget.CardView
         android:layout_width="180dp"
@@ -15,8 +24,7 @@
         app:cardBackgroundColor="#FFFFFF"
         app:cardCornerRadius="2dp"
         android:layout_marginTop="50dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginLeft="25dp"
+
         >
 
         <LinearLayout
@@ -39,7 +47,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Café Badilico"
+                    android:text="@string/caf_badilico"
                     android:textStyle="bold" />
 
                 <LinearLayout
@@ -77,7 +85,7 @@
                     android:textColor="#3A3A3A"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="$. Italian, Cafe"
+                    android:text="@string/italian_cafe"
                     android:layout_marginTop="10dp"
                     />
 
@@ -85,7 +93,7 @@
                     android:textSize="10sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Cafe, chocolate, lanches. Ambiente aconchegante e de fácil acesso" />
+                    android:text="@string/descbad" />
 
                 <View
                     android:layout_width="match_parent"
@@ -100,7 +108,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Horários disponíveis" />
+                    android:text="@string/horario" />
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -113,7 +121,6 @@
                     android:textSize="5sp"
                     android:text="5:30 pm"
                     android:textAllCaps="false"
-                    android:layout_marginLeft="5dp"
                     />
 
                 <Button
@@ -140,138 +147,9 @@
             </LinearLayout>
 
         </LinearLayout> <!-- Fechando LinearLayout dentro do CardView !-->
-
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:layout_width="180dp"
-        android:layout_height="300dp"
-        app:cardBackgroundColor="#FFFFFF"
-        app:cardCornerRadius="2dp"
-        android:layout_marginTop="50dp"
-        >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"> <!-- Abrindo LinearLayout dentro do CardView!-->
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:src="@drawable/cafe_dois"
-                />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:textSize="12sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Glonojad Vegetarian Food"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RatingBar
-                        style="@style/Widget.AppCompat.RatingBar.Small"
-                        android:layout_width="80dp"
-                        android:layout_height="wrap_content"
-                        android:numStars="5"
-                        android:stepSize="0.5"
-                        /> <!-- Barra de avaliação !-->
-
-                    <TextView
-                        android:textSize="9sp"
-                        android:layout_marginLeft="5sp"
-                        android:layout_marginRight="5sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="4.5" />
-
-                    <TextView
-                        android:textSize="9sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="(413)" />
-
-                </LinearLayout>
-
-                <TextView
-                    android:textSize="12sp"
-                    android:textStyle="bold"
-                    android:textColor="#3A3A3A"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="$. Vegetarian, Coffee"
-                    android:layout_marginTop="10dp"
-                    />
-
-                <TextView
-                    android:textSize="10sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Comida vegetariana, atmosfera aconchegante, fácil localização" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#CACACA"
-                    android:layout_marginTop="5dp"
-                    />
-
-                <TextView
-                    android:textSize="8sp"
-                    android:textColor="#3A3A3A"
-                    android:layout_marginTop="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Horários disponíveis" />
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <Button
-                        android:layout_width="42dp"
-                        android:layout_height="35dp"
-                        android:textSize="5sp"
-                        android:text="4:00 pm"
-                        android:textAllCaps="false"
-                        android:layout_marginLeft="5dp"
-                        />
-
-                    <Button
-                        android:layout_width="42dp"
-                        android:layout_height="35dp"
-                        android:textSize="5sp"
-                        android:text="6:00 pm"
-                        android:textAllCaps="false" />
-
-                    <Button
-                        android:layout_width="42dp"
-                        android:layout_height="35dp"
-                        android:textSize="5sp"
-                        android:text="8:00 pm"
-                        android:textAllCaps="false" />
-
-                    <Button
-                        android:layout_width="42dp"
-                        android:layout_height="35dp"
-                        android:textSize="5sp"
-                        android:text="Reserve"
-                        android:textAllCaps="false" />
-                </LinearLayout>
-            </LinearLayout>
-
-        </LinearLayout> <!-- Fechando LinearLayout dentro do CardView !-->
-
     </androidx.cardview.widget.CardView>
 
+            <include layout="@layout/modelo_card" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

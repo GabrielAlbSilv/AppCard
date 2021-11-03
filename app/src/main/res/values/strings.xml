@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">AppCard</string>
+    <string name="glonojad">Glonojad Vegetarian Food</string>
+    <string name="vegetarian_coffee">$. Vegetarian, Coffee</string>
+    <string name="horario">Horários disponíveis</string>
+    <string name="descbad">Cafe, chocolate, lanches. Ambiente aconchegante e de fácil acesso</string>
+    <string name="italian_cafe">$. Italian, Cafe</string>
+    <string name="caf_badilico">Café Badilico</string>
+    <string name="descveg">Comida vegetariana, atmosfera aconchegante, fácil localização</string>
 </resources>
