@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="180dp"
     android:layout_height="300dp"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#FFFFFF"
-    app:cardCornerRadius="2dp"
-    >
+    app:cardCornerRadius="2dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,8 +14,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="120dp"
-            android:src="@drawable/cafe_dois"
-            />
+            android:src="@drawable/cafe_dois" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -25,10 +23,10 @@
             android:orientation="vertical">
 
             <TextView
-                android:textSize="12sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/glonojad"
+                android:textSize="12sp"
                 android:textStyle="bold" />
 
             <LinearLayout
@@ -41,55 +39,53 @@
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:numStars="5"
-                    android:stepSize="0.5"
-                    /> <!-- Barra de avaliação !-->
+                    android:stepSize="0.5" /> <!-- Barra de avaliação !-->
 
                 <TextView
-                    android:textSize="9sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="5sp"
                     android:layout_marginRight="5sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="4.5" />
+                    android:text="4.5"
+                    android:textSize="9sp" />
 
                 <TextView
-                    android:textSize="9sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="(413)" />
+                    android:text="(413)"
+                    android:textSize="9sp" />
 
             </LinearLayout>
 
             <TextView
-                android:textSize="12sp"
-                android:textStyle="bold"
-                android:textColor="#3A3A3A"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/vegetarian_coffee"
                 android:layout_marginTop="10dp"
-                />
+                android:text="@string/vegetarian_coffee"
+                android:textColor="#3A3A3A"
+                android:textSize="12sp"
+                android:textStyle="bold" />
 
             <TextView
-                android:textSize="10sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/descveg" />
+                android:text="@string/descveg"
+                android:textSize="10sp" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#CACACA"
                 android:layout_marginTop="5dp"
-                />
+                android:background="#CACACA" />
 
             <TextView
-                android:textSize="8sp"
-                android:textColor="#3A3A3A"
-                android:layout_marginTop="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Horários disponíveis" />
+                android:layout_marginTop="5dp"
+                android:text="Horários disponíveis"
+                android:textColor="#3A3A3A"
+                android:textSize="8sp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -98,32 +94,31 @@
                 <Button
                     android:layout_width="42dp"
                     android:layout_height="35dp"
-                    android:textSize="5sp"
+                    android:layout_marginLeft="5dp"
                     android:text="4:00 pm"
                     android:textAllCaps="false"
-                    android:layout_marginLeft="5dp"
-                    />
+                    android:textSize="5sp" />
 
                 <Button
                     android:layout_width="42dp"
                     android:layout_height="35dp"
-                    android:textSize="5sp"
                     android:text="6:00 pm"
-                    android:textAllCaps="false" />
+                    android:textAllCaps="false"
+                    android:textSize="5sp" />
 
                 <Button
                     android:layout_width="42dp"
                     android:layout_height="35dp"
-                    android:textSize="5sp"
                     android:text="8:00 pm"
-                    android:textAllCaps="false" />
+                    android:textAllCaps="false"
+                    android:textSize="5sp" />
 
                 <Button
                     android:layout_width="42dp"
                     android:layout_height="35dp"
-                    android:textSize="5sp"
                     android:text="Reserve"
-                    android:textAllCaps="false" />
+                    android:textAllCaps="false"
+                    android:textSize="5sp" />
             </LinearLayout>
         </LinearLayout>
 
