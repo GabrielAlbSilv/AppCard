@@ -138,7 +138,7 @@
                         </LinearLayout>
                     </LinearLayout>
 
-                </LinearLayout> <!-- Fechando LinearLayout dentro do CardView !-->
+                </LinearLayout> <!-- Fechando LinearLayout dentro do CardView! !-->
             </androidx.cardview.widget.CardView>
 
             <include layout="@layout/modelo_card" />
